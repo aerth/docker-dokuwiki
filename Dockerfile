@@ -14,6 +14,6 @@ RUN mkdir /dokuwiki-storage && \
     ln -s /dokuwiki-storage/data /var/www/public/data && \
     mv /var/www/public/lib/plugins /dokuwiki-storage/plugins && \
     ln -s /dokuwiki-storage/plugins /var/www/public/lib/plugins
-VOLUME ["/dokuwiki-storage"]
+#VOLUME ["/dokuwiki-storage"]
 EXPOSE 80
 CMD ["/run.sh"]
